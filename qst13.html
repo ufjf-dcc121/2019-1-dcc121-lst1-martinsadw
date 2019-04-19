@@ -8,7 +8,10 @@
         <div id="interativo">Clique-me!</div>
 
         <script type="text/javascript">
-
+            var interativo = document.getElementById('interativo')
+            interativo.addEventListener("click", function() {
+                this.textContent = "Funcionou!";
+            });
         </script>
     </body>
 </html>
