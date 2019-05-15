@@ -7,11 +7,23 @@
     <body>
         <main>
             <h1>Resultado da Avaliação</h1>
-            <p>Olá Fulano, você está matriculado há <span id="tempo">2</span> anos no curso de Confeitaria e as notas das suas disciplinas são: <span id="nota-confeitaria">70</span> em Confeitaria Básica; <span id="nota-coberturas">80</span> em Coberturas e <span id="nota-broas">60</span> em Broas e Bolos.</p>
+            <p>Olá <span id="nome" contenteditable="true">Fulano</span>, você está matriculado há <span id="anos" contenteditable="true">2</span> anos no curso de Confeitaria e as notas das suas disciplinas são: <span id="confeitaria" contenteditable="true">70</span> em Confeitaria Básica; <span id="coberturas" contenteditable="true">80</span> em Coberturas e <span id="bolos" contenteditable="true">60</span> em Broas e Bolos.</p>
             <p id="resultado"></p>
             <button type="button" id="avaliar">Avaliar</button>
             <button type="button" id="limpar">Limpar</button>
             <p id="melhorias"></p>
         </main>
+        <script type="text/javascript">
+            var nome = document.getElementById('nome');
+            var anos = document.getElementById('anos');
+            var confeitaria = document.getElementById('confeitaria');
+            var coberturas = document.getElementById('coberturas');
+            var bolos = document.getElementById('bolos');
+            var botaoAvaliar = document.getElementById('avaliar');
+            var botaoLimpar = document.getElementById('limpar');
+            var resultado = document.getElementById('resultado');
+            var melhorias = document.getElementById('melhorias');
+            var media;
+        </script>
     </body>
 </html>
