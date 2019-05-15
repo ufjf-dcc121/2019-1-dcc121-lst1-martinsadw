@@ -24,6 +24,13 @@
             var resultado = document.getElementById('resultado');
             var melhorias = document.getElementById('melhorias');
             var media;
+
+            function limparClick()
+            {
+                resultado.textContent = '';
+                melhorias.textContent = '';
+            }
+            botaoLimpar.addEventListener("click", limparClick);
         </script>
     </body>
 </html>
