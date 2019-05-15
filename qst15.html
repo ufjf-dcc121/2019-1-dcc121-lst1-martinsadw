@@ -31,6 +31,22 @@
                 melhorias.textContent = '';
             }
             botaoLimpar.addEventListener("click", limparClick);
+
+            function avaliarClick()
+            {
+                var notaConfeitaria = parseFloat(confeitaria.textContent);
+                var notaCoberturas = parseFloat(coberturas.textContent);
+                var notaBolos = parseFloat(bolos.textContent);
+
+                media = (notaConfeitaria + notaCoberturas + notaBolos) / 3;
+                media = Math.round(media * 100) / 100;
+
+                if (media >= 70)
+                    resultado.textContent = 'Parabéns ' + nome.textContent + '! Você está aprovado com média ' + media + '!';
+                else
+                    resultado.textContent = 'Você está reprovado com média ' + media + '!';
+            }
+            botaoAvaliar.addEventListener("click", avaliarClick);
         </script>
     </body>
 </html>
