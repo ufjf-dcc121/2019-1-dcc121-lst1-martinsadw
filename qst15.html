@@ -45,6 +45,14 @@
                     resultado.textContent = 'Parabéns ' + nome.textContent + '! Você está aprovado com média ' + media + '!';
                 else
                     resultado.textContent = 'Você está reprovado com média ' + media + '!';
+
+                melhorias.textContent = '';
+                if (notaConfeitaria < 60)
+                    melhorias.innerHTML += nome.textContent + ', considere estudar mais Confeitaria!<br />';
+                if (notaCoberturas < 60)
+                    melhorias.innerHTML += nome.textContent + ', considere estudar mais Coberturas!<br />';
+                if (notaBolos < 60)
+                    melhorias.innerHTML += nome.textContent + ', considere estudar mais Broas e Bolos!<br />';
             }
             botaoAvaliar.addEventListener("click", avaliarClick);
         </script>
